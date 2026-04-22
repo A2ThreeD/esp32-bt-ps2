@@ -1,0 +1,15 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "BleMouseClient.cpp"
+        "Ps2MouseDevice.cpp"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        bt
+        driver
+        esp_event
+        esp_hid
+        esp_timer
+        nvs_flash
+)
